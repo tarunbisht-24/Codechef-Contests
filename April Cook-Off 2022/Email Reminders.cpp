@@ -27,7 +27,6 @@ Explanation
 Out of 4456 users, 342 do not want to receive reminders. Hence MoEngage needs to send email to 4114 users.
 */
 
-
 #include <iostream>
 using namespace std;
 

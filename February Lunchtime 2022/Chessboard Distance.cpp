@@ -1,32 +1,36 @@
 /*
-Chef started watching a movie that runs for a total of X minutes.
+The Chessboard Distance for any two points (X1,Y1) and (X2,Y2) on a Cartesian plane is defined as max(|X1−X2|,|Y1−Y2|).
 
-Chef has decided to watch the first Y minutes of the movie at twice the usual speed as he was warned by his friends that the movie gets interesting only after the first Y minutes.
+You are given two points (X1,Y1) and (X2,Y2). Output their Chessboard Distance.
 
-How long will Chef spend watching the movie in total?
-
-Note: It is guaranteed that Y is even.
+Note that, |P| denotes the absolute value of integer P. For example, |−4|=4 and |7|=7.
 
 Input Format
-The first line contains two space separated integers X,Y - as per the problem statement.
+First line will contain T, the number of test cases. Then the test cases follow.
+Each test case consists of a single line of input containing 4 space separated integers - X1,Y1,X2,Y2 - as defined in the problem statement.
 Output Format
-Print in a single line, an integer denoting the total number of minutes that Chef spends in watching the movie.
+For each test case, output in a single line the chessboard distance between (X1,Y1) and (X2,Y2)
 Constraints
-1≤X,Y≤1000
-Y is an even integer.
+1≤T≤1000
+1≤X1,Y1,X2,Y2≤105
 Subtasks
 Subtask #1 (100 points): original constraints
 
 Sample Input 1 
-100 20
+3
+2 4 5 1
+5 5 5 3
+1 4 3 3
 Sample Output 1 
-90
+3
+2
+2
 Explanation
-For the first Y=20 minutes, Chef watches at twice the usual speed, so the total amount of time spent to watch this portion of the movie is Y2=10 minutes.
+In the first case, the distance between (2,4) and (5,1) is max(|2−5|,|4−1|)=max(|−3|,|3|)=3.
 
-For the remaining X−Y=80 minutes, Chef watches at the usual speed, so it takes him 80 minutes to watch the remaining portion of the movie.
+In the second case, the distance between (5,5) and (5,3) is max(|5−5|,|5−3|)=max(|0|,|2|)=2.
 
-In total, Chef spends 10+80=90 minutes watching the entire movie.
+In the third case, the distance between (1,4) and (3,3) is max(|1−3|,|4−3|)=max(|−2|,|1|)=2.
 */
 
 #include <iostream>
